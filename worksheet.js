@@ -61,10 +61,40 @@
 // }
 
 
-// LOOPS
+// // LOOPS
 
-// #1. JavaScript is Cool
+// // #1. JavaScript is Cool
 
-for(let i = 0; i < 7; i++) {
-    console.log("JavaScript is cool!")
-}
+// for(let i = 0; i < 7; i++) {
+//     console.log("JavaScript is cool!")
+// }
+
+// // #2 Counting 0-10
+
+// let counter = 0;
+
+// for(let i = 0; i < 11; i++) {
+//     console.log(counter);
+//     counter = counter + 1;
+// }
+
+// // #3. Hello-Goodbye Sequence
+
+// let counter = 0;
+
+// for(let i = 0; i < 10; i++) {
+//     if(counter == 0) {
+//         console.log("Hello");
+//         counter += 1;
+//     }
+
+//     else if(counter % 2 != 0) {
+//         console.log("Goodbye");
+//         counter += 1;
+//     }
+
+//     else if(counter % 2 == 0) {
+//         console.log("Hello");
+//         counter += 1;
+//     }
+// }
