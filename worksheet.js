@@ -100,35 +100,91 @@
 // }
 
 
-// FUNCTIONS
+// // FUNCTIONS
 
-// #1. Favorite Movie
+// // #1. Favorite Movie
 
 
-function printMovieName() {
-    let favoriteMovie = "Caddyshack";
-    return favoriteMovie;
+// function printMovieName() {
+//     let favoriteMovie = "Caddyshack";
+//     return favoriteMovie;
+// }
+
+// let bestMovie = printMovieName();
+// console.log("Your favorite movie is: " + bestMovie);
+
+// // #2. Favorite Band
+
+// function pickFavoriteBand() {
+//     let userFavoriteBand = prompt("What is your favorite band?");
+//     return userFavoriteBand;
+// }
+
+// let favoriteBand = pickFavoriteBand();
+// console.log("Your favorite band is: " + favoriteBand);
+
+// // #3. Concert
+
+// function concertDisplay(musicalAct) {
+//     let myStreet = prompt("What street do you live on?");
+//     console.log("It would be great if " + musicalAct + " played a show on " + myStreet + "!");
+// }
+
+// concertDisplay(favoriteBand);
+
+
+// // ARRAYS
+
+// // #1. Desktop Items
+
+// let desktopItems = ["monitor", "lamp", "pen"];
+
+// desktopItems.push("Infinity Gauntlet");
+
+// let index = 0;
+// for(let i = 0; i < 4; i++) {
+//     console.log(desktopItems[index]);
+//     index += 1;
+// }
+
+
+// MAGIC NUMBERS
+
+let magicNumber = 50;
+let guess = 0;
+
+while(guess != magicNumber) {
+   switch(guess) {
+       case guess >= magicNumber - 10:
+           console.log("Getting warmer");
+        case guess < magicNumber:
+            console.log("Too low!");
+            break;
+        case guess <= magicNumber + 10:
+            console.log("Getting warmer");
+        case guess > magicNumber:
+            console.log("Too high!");
+            break;
+        case guess == magicNumber:
+            console.log("You guessed it! The number was: " + magicNumber);
+            break;
+   }
 }
 
-let bestMovie = printMovieName();
-console.log("Your favorite movie is: " + bestMovie);
 
-// #2. Favorite Band
-
-function pickFavoriteBand() {
-    let userFavoriteBand = prompt("What is your favorite band?");
-    return userFavoriteBand;
-}
-
-let favoriteBand = pickFavoriteBand();
-console.log("Your favorite band is: " + favoriteBand);
-
-// #3. Concert
-
-function concertDisplay(musicalAct) {
-    let myStreet = prompt("What street do you live on?");
-    console.log("It would be great if " + musicalAct + " played a show on " + myStreet + "!");
-}
-
-concertDisplay(favoriteBand);
-
+// guess = prompt("What is the magic number 1 - 100?");
+// if(guess == magicNumber) {
+//     console.log("You guessed the magic number: " + magicNumber);
+// }
+// else if(guess < magicNumber) {
+//     if(guess >= guess - 10) {
+//         console.log("Getting warmer!");
+//     }
+//     console.log("Too low!");
+// }
+// else if(guess > magicNumber) {
+//     if(guess >= guess + 10) {
+//         console.log("Getting warmer!");
+//     }
+//     console.log("Too high!");
+// }
