@@ -61,7 +61,7 @@
 // }
 
 
-// // LOOPS
+// // LOOPS (for loops)
 
 // // #1. JavaScript is Cool
 
@@ -98,3 +98,37 @@
 //         counter += 1;
 //     }
 // }
+
+
+// FUNCTIONS
+
+// #1. Favorite Movie
+
+
+function printMovieName() {
+    let favoriteMovie = "Caddyshack";
+    return favoriteMovie;
+}
+
+let bestMovie = printMovieName();
+console.log("Your favorite movie is: " + bestMovie);
+
+// #2. Favorite Band
+
+function pickFavoriteBand() {
+    let userFavoriteBand = prompt("What is your favorite band?");
+    return userFavoriteBand;
+}
+
+let favoriteBand = pickFavoriteBand();
+console.log("Your favorite band is: " + favoriteBand);
+
+// #3. Concert
+
+function concertDisplay(musicalAct) {
+    let myStreet = prompt("What street do you live on?");
+    console.log("It would be great if " + musicalAct + " played a show on " + myStreet + "!");
+}
+
+concertDisplay(favoriteBand);
+
