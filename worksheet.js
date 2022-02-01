@@ -1,6 +1,6 @@
-// VARIABLES
+// // VARIABLES
 
-// #1. Days of the Week
+// // #1. Days of the Week
 
 // let dayOfWeek = "Monday";
 
@@ -10,7 +10,7 @@
 
 // console.log("I can't wait for " + dayOfWeek + "!");
 
-// // #2. User Input
+// #2. User Input
 
 // let animalInput = prompt("What is your favorite animal?")
 // let colorInput = prompt("What is your favorite color?")
@@ -19,7 +19,7 @@
 
 // // CONDITIONALS
 
-// #1. Meals
+// // #1. Meals
 // Favorites: Breakfast Burrito, Grilled Cheese Sandwich & Soup, Homemade Pizza
 
 // let timeOfDay = 1700;
@@ -148,43 +148,26 @@
 // }
 
 
-// MAGIC NUMBERS
+// // MAGIC NUMBERS
 
-let magicNumber = 50;
+let magicNumber = Math.floor(Math.random() * 101) + 1;
 let guess = 0;
 
 while(guess != magicNumber) {
-   switch(guess) {
-       case guess >= magicNumber - 10:
-           console.log("Getting warmer");
-        case guess < magicNumber:
-            console.log("Too low!");
-            break;
-        case guess <= magicNumber + 10:
-            console.log("Getting warmer");
-        case guess > magicNumber:
-            console.log("Too high!");
-            break;
-        case guess == magicNumber:
-            console.log("You guessed it! The number was: " + magicNumber);
-            break;
-   }
+    guess = prompt("What is the magic number 1 - 100?");
+    if(guess == magicNumber) {
+        console.log("You guessed the magic number: " + magicNumber);
+    }
+    else if(guess < magicNumber) {
+        if(guess >= magicNumber - 10) {
+            console.log("Getting warmer!");
+        }
+        console.log("Too low!");
+    }
+    else if(guess > magicNumber) {
+        if(guess <= magicNumber + 10) {
+            console.log("Getting warmer!");
+        }
+        console.log("Too high!");
+    }
 }
-
-
-// guess = prompt("What is the magic number 1 - 100?");
-// if(guess == magicNumber) {
-//     console.log("You guessed the magic number: " + magicNumber);
-// }
-// else if(guess < magicNumber) {
-//     if(guess >= guess - 10) {
-//         console.log("Getting warmer!");
-//     }
-//     console.log("Too low!");
-// }
-// else if(guess > magicNumber) {
-//     if(guess >= guess + 10) {
-//         console.log("Getting warmer!");
-//     }
-//     console.log("Too high!");
-// }
